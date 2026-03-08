@@ -5,6 +5,7 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import Sidebar from "@/components/Sidebar";
 import SayHiButton from "@/components/SayHiButton";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Dinesh Kumar | Mechanical Design Engineer",
@@ -44,6 +45,7 @@ export default function RootLayout({
         </div>
         <SayHiButton />
         <VisualEditsMessenger />
+        <SpeedInsights />
       </body>
     </html>);
 
